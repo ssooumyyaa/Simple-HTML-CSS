@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+<form>
+<label>Enter name</label>
+<input type="text" name="t1" value=""/>
+<input type="text" name="t2" value=""/>
+<input type ="submit" name="sub" value="Display"/>
+<?php
+	if(isset($_GET["sub"]))
+	{	$x=$_GET["t1"];
+		$x2=$_GET["t2"];
+		echo $x+$x2;
+	}
+?>
+</form>
+</body>	
+</html>
